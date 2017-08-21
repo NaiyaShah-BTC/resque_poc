@@ -1,0 +1,12 @@
+sleep:
+  every: 1m
+  class: Sleeper
+  description: Runs the perform method in Sleeper
+wake_up:
+  every: 1h
+  class: WakeUp
+  description: Runs the perform method in WakeUp
+run:
+  every: 1d
+  class: Run
+  description: Runs the perform method in Run

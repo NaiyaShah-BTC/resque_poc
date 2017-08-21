@@ -1,0 +1,5 @@
+<%= form_for @article do |f| %>
+  <%= f.text_field :name, placeholder: 'Title', class: 'form-control' %>
+  <%= f.text_field :description, placeholder: 'Content', class: 'form-control' %>
+  <%= f.submit "Submit", class: 'btn btn-light-blue' %>
+<% end %>
