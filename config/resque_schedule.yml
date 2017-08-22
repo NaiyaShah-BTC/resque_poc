@@ -1,12 +1,17 @@
 sleep:
-  every: 1m
+  every: 30s
   class: Sleeper
   description: Runs the perform method in Sleeper
 wake_up:
-  every: 1h
+  every: 1m
   class: WakeUp
   description: Runs the perform method in WakeUp
 run:
-  every: 1d
+  every: 2m
   class: Run
   description: Runs the perform method in Run
+default:
+  every: 5s
+  class: CleanupJob
+  queue: low
+  description: Runs the perform method in CleanupJob

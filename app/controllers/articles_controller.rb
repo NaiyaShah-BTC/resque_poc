@@ -1,6 +1,5 @@
 class ArticlesController < ApplicationController
   def index
-    # Sleeper.set(wait: 10.seconds).perform_later("hi")
     @articles = Article.all
   end
 
